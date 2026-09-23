@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="A survival guide through all 12 houses for Libra rising spiritual entrepreneurs, by Amanda Fielding-Smith.">
+<title>Confessions of a Libra Rising</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,600;1,500;1,600;1,700&family=Space+Mono:wght@400;700&family=Noto+Sans+Symbols&family=Noto+Sans+Symbols+2&display=swap" rel="stylesheet">
+<style>
+/* Deliberately single-theme: the night sky is the brand. Every color is painted explicitly. */
+:root{
+  --night:#0D0D1A; --night2:#14142A; --panel:#1A1A30; --panel2:#23233F;
+  --lav:#C5B8E8; --violL:#B88CED; --viol:#8B5FC7;
+  --mint:#7EECD4; --mintDeep:#3FBF95;
+  --pink:#E8A0E8; --gold:#E8C36A;
+  --txt:#EDEAF6; --txt2:#BDB8D4; --txt3:#8C87A6;
+  --line:rgba(197,184,232,.14); --line2:rgba(197,184,232,.28);
+  --hl:linear-gradient(90deg,var(--violL),var(--pink),var(--mint));
+  --glyph:'Noto Sans Symbols','Noto Sans Symbols 2','Segoe UI Symbol','Apple Symbols',serif;
+  --serif:'Cormorant Garamond',Georgia,'Times New Roman',serif;
+  --sans:'Outfit',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --mono:'Space Mono',ui-monospace,Menlo,monospace;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth;background:var(--night)}
+body{
+  background:
+    radial-gradient(900px 600px at 8% -8%, rgba(139,95,199,.30), transparent 62%),
+    radial-gradient(700px 520px at 96% 6%, rgba(232,160,232,.12), transparent 60%),
+    radial-gradient(800px 600px at 80% 100%, rgba(63,191,149,.08), transparent 62%),
+    var(--night);
+  background-attachment:fixed;
+  color:var(--txt);font-family:var(--sans);font-size:16px;line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1080px;margin:0 auto;padding-inline:20px}
+.g{font-family:var(--serif);font-style:italic;font-weight:700;background:var(--hl);-webkit-background-clip:text;background-clip:text;color:transparent;padding-right:.08em}
+.kicker{font-family:var(--mono);font-size:11.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--pink);margin:0}
+.glyph{font-family:var(--glyph);font-style:normal}
+h1,h2,h3{margin:0;text-wrap:balance;letter-spacing:-.02em}
+p{margin:0}
+a{color:var(--mint)}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--mint);outline-offset:3px;border-radius:6px}
+
+
+/* ---------- watch card ---------- */
+.vidcard{position:relative;display:block;width:100%;max-width:360px;margin-top:22px;border-radius:16px;overflow:hidden;border:1px solid var(--line2);background:var(--night2);text-decoration:none;color:var(--txt);box-shadow:0 14px 40px rgba(0,0,0,.35);transition:transform .2s,border-color .2s}
+.vidcard:hover{transform:translateY(-2px);border-color:var(--lav)}
+.vidcard img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover}
+.vidcard .playbtn{position:absolute;left:50%;top:calc(50% - 16px);width:58px;height:58px;transform:translate(-50%,-50%);border-radius:50%;background:rgba(13,13,26,.72);border:1px solid rgba(255,255,255,.35);backdrop-filter:blur(4px);display:grid;place-items:center;transition:background .2s,transform .2s}
+.vidcard .playbtn::before{content:"";width:0;height:0;border-style:solid;border-width:11px 0 11px 19px;border-color:transparent transparent transparent #fff;margin-left:4px}
+.vidcard:hover .playbtn{background:var(--lav);transform:translate(-50%,-50%) scale(1.06)}
+.vidcard .vidtag{display:flex;justify-content:space-between;gap:10px;padding:10px 14px;font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--txt2)}
+
+/* ---------- hero ---------- */
+.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center;padding-block:56px 40px}
+.hero h1{font-size:clamp(40px,6.4vw,76px);line-height:1.02;font-weight:800;margin-block:16px 20px}
+.hero h1 .g{display:block;font-size:1.08em;line-height:1.05}
+.hero .tag{font-family:var(--serif);font-style:italic;font-weight:600;font-size:clamp(24px,2.8vw,32px);line-height:1.2;color:var(--gold);margin-bottom:16px}
+.hero .lead{font-size:clamp(17px,1.7vw,19.5px);color:var(--txt2);max-width:34em}
+.byline{margin-top:22px;color:var(--txt3);font-size:14.5px;line-height:1.55;max-width:36em}
+.byline b{color:var(--txt);font-weight:600}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:12px 20px;border-radius:999px;border:1px solid var(--line2);background:transparent;cursor:pointer;font-weight:600;font-size:15px;text-decoration:none;color:var(--txt);transition:background .2s,border-color .2s}
+.btn:hover{background:rgba(197,184,232,.08);border-color:var(--lav)}
+.btn.primary{background:var(--txt);color:var(--night);border-color:var(--txt)}
+.btn.primary:hover{background:var(--mint);border-color:var(--mint)}
+.btn kbd{font-family:var(--mono);font-size:11px;padding:2px 6px;border-radius:4px;background:rgba(13,13,26,.12)}
+.wheel-wrap{position:relative;max-width:460px;width:100%;justify-self:center}
+.wheel-wrap svg{width:100%;height:auto;display:block;overflow:visible}
+.wheel-cap{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--txt3);text-align:center;margin-top:10px}
+
+.seg{fill:rgba(35,35,63,.55);stroke:var(--line2);stroke-width:1;cursor:pointer;transition:fill .2s}
+.seg.alt{fill:rgba(26,26,48,.75)}
+.seg:hover,.seg:focus-visible,.seg.active{fill:rgba(139,95,199,.55);outline:none}
+.seg.me{fill:rgba(63,191,149,.28)}
+.seg.me:hover,.seg.me.active{fill:rgba(139,95,199,.6)}
+.w-glyph{font-family:var(--glyph);fill:var(--txt);font-size:22px;pointer-events:none}
+.w-num{font-family:var(--mono);fill:var(--txt3);font-size:11px;pointer-events:none}
+.w-axis{stroke:var(--gold);stroke-width:1.2;stroke-dasharray:3 4}
+.w-axis-lbl{font-family:var(--mono);fill:var(--gold);font-size:11px;letter-spacing:.12em}
+.w-center-a{font-family:var(--serif);font-style:italic;font-weight:600;fill:var(--txt);font-size:21px}
+.w-center-b{font-family:var(--mono);fill:var(--txt3);font-size:9.5px;letter-spacing:.2em}
+
+/* ---------- by the numbers ---------- */
+.tally{display:flex;flex-wrap:wrap;border:1px solid var(--line2);border-radius:22px;overflow:hidden;background:rgba(26,26,48,.55);margin-bottom:44px}
+.tally div{flex:1 1 138px;padding:18px 18px 16px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);margin:0 -1px -1px 0;display:flex;flex-direction:column;gap:2px}
+.tally b{font-family:var(--serif);font-style:italic;font-weight:700;font-size:clamp(40px,4.4vw,54px);line-height:1;background:var(--hl);-webkit-background-clip:text;background-clip:text;color:transparent;padding-right:.1em;font-variant-numeric:lining-nums}
+.tally span{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--txt);margin-top:6px}
+.tally small{font-size:13px;color:var(--txt3);line-height:1.35}
+.deck-tally{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:30px}
+.deck-tally div{display:flex;align-items:baseline;gap:8px}
+.deck-tally b{font-family:var(--serif);font-style:italic;font-weight:700;font-size:clamp(30px,3vw,44px);color:var(--gold);line-height:1}
+.deck-tally span{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--txt2)}
+
+/* ---------- upside-down explainer ---------- */
+.flipside{display:grid;grid-template-columns:1fr 1fr;gap:40px;padding-block:44px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.flipside h2{font-size:clamp(26px,3.2vw,38px);font-weight:700;line-height:1.12;margin-top:12px}
+.flipside p{color:var(--txt2);max-width:36em}
+.flipside p + p{margin-top:14px}
+.flip-table{width:100%;border-collapse:collapse;font-size:14.5px;font-variant-numeric:tabular-nums}
+.flip-table th{font-family:var(--mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--txt3);font-weight:400;text-align:left;padding:0 8px 10px}
+.flip-table td{padding:7px 8px;border-top:1px solid var(--line)}
+.flip-table td:first-child{font-family:var(--mono);color:var(--txt3);width:3.5em}
+.flip-table .glyph{color:var(--lav);margin-right:6px}
+.flip-table .arrow{color:var(--pink)}
+.chart-card{margin-top:22px;display:flex;flex-wrap:wrap;gap:8px}
+.chip{font-size:13px;padding:5px 12px;border-radius:999px;border:1px solid var(--line2);color:var(--txt2);white-space:nowrap}
+.chip b{color:var(--txt);font-weight:600}
+
+/* ---------- sticky house nav ---------- */
+.hnav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rgba(13,13,26,.88);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.hnav .wrap{display:flex;align-items:center;gap:12px}
+.hnav-scroll{display:flex;gap:4px;overflow-x:auto;padding-block:10px;scrollbar-width:none;flex:1;min-width:0}
+.hnav-scroll::-webkit-scrollbar{display:none}
+.hnav a{flex:none;display:flex;align-items:center;gap:6px;padding:6px 10px;border-radius:999px;text-decoration:none;color:var(--txt2);font-size:13px;border:1px solid transparent;white-space:nowrap}
+.hnav a .glyph{font-size:15px;color:var(--lav)}
+.hnav a:hover{color:var(--txt);border-color:var(--line2)}
+.hnav a.cur{color:var(--night);background:var(--lav)}
+.hnav a.cur .glyph{color:var(--night)}
+.hnav a.me::after{content:"";width:6px;height:6px;border-radius:50%;background:var(--mintDeep)}
+.hnav .deck-open{flex:none;padding:7px 14px;font-size:13px}
+
+/* ---------- houses ---------- */
+.houses{padding-block:20px 10px}
+.house{padding-block:64px;border-bottom:1px solid var(--line);scroll-margin-top:60px}
+.house-head{display:grid;grid-template-columns:auto 1fr auto;gap:26px;align-items:start}
+.big-glyph{font-family:var(--glyph);font-size:clamp(64px,8vw,96px);line-height:.9;color:var(--lav);width:1.1em;text-align:center}
+.house-num{display:block;font-family:var(--mono);font-size:12px;color:var(--txt3);letter-spacing:.14em;margin-top:10px;text-align:center}
+.house h2{font-size:clamp(28px,3.8vw,46px);font-weight:700;line-height:1.08;margin-block:10px 14px}
+.runs{color:var(--txt2);font-size:16.5px;max-width:40em}
+.runs span,.flipnote span{font-family:var(--mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--txt3);margin-right:8px}
+.flipnote{color:var(--txt3);font-size:14px;margin-top:6px}
+.me-btn{border:1px solid var(--line2);background:transparent;border-radius:999px;padding:8px 14px;font-size:13px;cursor:pointer;color:var(--txt2);white-space:nowrap;display:flex;align-items:center;gap:8px}
+.me-btn::before{content:"";width:9px;height:9px;border-radius:50%;border:1.5px solid var(--txt3)}
+.me-btn[aria-pressed="true"]{border-color:var(--mintDeep);color:var(--mint)}
+.me-btn[aria-pressed="true"]::before{background:var(--mintDeep);border-color:var(--mintDeep)}
+
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:34px}
+.side{border-radius:18px;padding:22px 24px;border:1px solid var(--line)}
+.side h3{font-family:var(--mono);font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;font-weight:700;margin-bottom:12px}
+.side ul{margin:0;padding:0;list-style:none;display:grid;gap:10px}
+.side li{position:relative;padding-left:20px;color:var(--txt2)}
+.side li::before{content:"";position:absolute;left:0;top:.72em;width:8px;height:8px;border-radius:50%}
+.gift{background:linear-gradient(160deg,rgba(63,191,149,.10),rgba(26,26,48,.4))}
+.gift h3{color:var(--mint)} .gift li::before{background:var(--mintDeep)}
+.trap{background:linear-gradient(160deg,rgba(232,160,232,.10),rgba(26,26,48,.4))}
+.trap h3{color:var(--pink)} .trap li::before{background:transparent;border:1.5px solid var(--pink)}
+
+.lower{display:grid;grid-template-columns:1.25fr 1fr;gap:34px;margin-top:34px;align-items:start}
+.irl,.biz{padding-top:4px}
+.irl h3,.biz h3{font-family:var(--mono);font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;font-weight:700;margin-bottom:14px}
+.irl h3{color:var(--gold)} .biz h3{color:var(--lav)}
+.irl ul,.biz ul{margin:0;padding:0;list-style:none;display:grid;gap:11px}
+.irl li,.biz li{position:relative;padding-left:24px;line-height:1.5}
+.irl li{color:var(--txt);font-size:17px}
+.irl li::before{content:"";position:absolute;left:2px;top:.62em;width:8px;height:8px;background:var(--gold);transform:rotate(45deg)}
+.biz li{color:var(--txt2)}
+.biz li::before{content:"";position:absolute;left:0;top:.66em;width:12px;height:2px;background:var(--lav)}
+.rule{margin-top:18px;padding:14px 18px;border-radius:14px;background:var(--panel2);border:1px solid var(--line2);font-weight:600;font-size:17px;line-height:1.35}
+.rule span{display:block;font-family:var(--mono);font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--mint);font-weight:400;margin-bottom:4px}
+
+/* ---------- cheat sheet ---------- */
+.cheat{padding-block:70px 30px}
+.cheat h2{font-size:clamp(28px,3.6vw,42px);font-weight:700;margin-block:12px 8px}
+.cheat .sub{color:var(--txt2);margin-bottom:26px}
+.table-scroll{overflow-x:auto;border:1px solid var(--line);border-radius:16px}
+.cheat table{width:100%;min-width:640px;border-collapse:collapse;font-size:15px}
+.cheat th{text-align:left;font-family:var(--mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--txt3);font-weight:400;padding:14px 16px;background:var(--panel)}
+.cheat td{padding:13px 16px;border-top:1px solid var(--line);vertical-align:top;color:var(--txt2)}
+.cheat td:first-child{white-space:nowrap;color:var(--txt)}
+.cheat td:first-child .glyph{color:var(--lav);font-size:18px;margin-right:8px}
+.cheat td:last-child{color:var(--txt);font-weight:600}
+.cheat tr.me td:first-child{box-shadow:inset 3px 0 0 var(--mintDeep)}
+
+/* ---------- close ---------- */
+.close{padding-block:60px 80px}
+.close-card{border-radius:26px;padding:clamp(28px,5vw,56px);background:linear-gradient(140deg,rgba(139,95,199,.28),rgba(26,26,48,.8) 55%,rgba(63,191,149,.14));border:1px solid var(--line2);display:grid;grid-template-columns:1.3fr 1fr;gap:34px;align-items:center}
+.close-card h2{font-size:clamp(28px,3.6vw,44px);line-height:1.1;font-weight:700;margin-block:12px 14px}
+.close-card p{color:var(--txt2)}
+.fit{padding:24px 26px;border-radius:18px;background:rgba(13,13,26,.45);border:1px solid var(--line)}
+.fit ul{margin:14px 0 0;padding:0;list-style:none;display:grid;gap:12px}
+.fit li{position:relative;padding-left:26px;color:var(--txt2);line-height:1.45}
+.fit li::before{content:"";position:absolute;left:2px;top:.32em;width:12px;height:7px;border-left:2px solid var(--mint);border-bottom:2px solid var(--mint);transform:rotate(-45deg)}
+.fit b{color:var(--txt);font-weight:600}
+.paths{display:grid;grid-template-columns:1.35fr 1fr;gap:18px;margin-top:18px}
+.path{border-radius:22px;padding:clamp(24px,3.5vw,36px);border:1px solid var(--line);background:var(--panel);display:flex;flex-direction:column;gap:12px}
+.path.deep{border-color:rgba(126,236,212,.4);background:linear-gradient(150deg,rgba(63,191,149,.16),var(--panel) 60%)}
+.path h3{font-size:clamp(22px,2.4vw,30px);font-weight:700;line-height:1.15}
+.path p{color:var(--txt2)}
+.path-cta{margin-top:auto;padding-top:8px;display:flex;flex-wrap:wrap;align-items:center;gap:12px 18px}
+.path-cta small{color:var(--txt3);font-size:13px}
+.scarcity{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:11.5px;letter-spacing:.08em;color:var(--gold)}
+.scarcity i{width:7px;height:7px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 4px rgba(232,195,106,.18)}
+.fine{color:var(--txt3);font-size:13px;margin-top:26px;max-width:60em}
+
+/* ---------- walkthrough deck ---------- */
+.deck{position:fixed;inset:0;z-index:100;background:
+  radial-gradient(1000px 700px at 10% -10%, rgba(139,95,199,.32), transparent 60%),
+  radial-gradient(800px 600px at 100% 110%, rgba(63,191,149,.12), transparent 60%),
+  var(--night);
+  display:flex;flex-direction:column;padding:calc(env(safe-area-inset-top,0px) + 18px) 20px calc(env(safe-area-inset-bottom,0px) + 18px)}
+.deck-top{display:flex;justify-content:space-between;align-items:center;gap:12px;max-width:1280px;width:100%;margin:0 auto}
+.deck-top .kicker{color:var(--txt3)}
+.deck-tools{display:flex;gap:8px}
+.deck-tools .btn{padding:8px 14px;font-size:13px}
+.deck-stage{flex:1;display:grid;grid-template-columns:1fr minmax(200px,340px);gap:48px;align-items:center;max-width:1280px;width:100%;margin:0 auto;min-height:0;overflow:auto}
+.slide .kicker{font-size:13px}
+.slide h2{font-size:clamp(36px,5.4vw,78px);line-height:1.02;font-weight:800;margin-block:14px 26px}
+.slide .deck-glyph{font-family:var(--glyph);font-size:clamp(54px,6vw,90px);color:var(--lav);line-height:1}
+.slide ul{margin:0;padding:0;list-style:none;display:grid;gap:14px}
+.slide li{font-size:clamp(19px,2.1vw,28px);line-height:1.3;color:var(--txt);padding-left:30px;position:relative}
+.slide li::before{content:"";position:absolute;left:0;top:.5em;width:12px;height:12px;border-radius:50%;background:var(--mintDeep)}
+.slide li.t::before{background:transparent;border:2px solid var(--pink)}
+.slide li.r::before{background:var(--gold);border-radius:2px;transform:rotate(45deg)}
+.slide .deck-rule{margin-top:30px;font-family:var(--serif);font-style:italic;font-weight:600;font-size:clamp(24px,2.8vw,38px);line-height:1.2;color:var(--gold)}
+.slide .deck-lead{font-size:clamp(19px,2vw,26px);color:var(--txt2);max-width:30em}
+.deck-side svg{width:100%;height:auto;display:block;overflow:visible}
+.deck-bottom{display:flex;justify-content:space-between;align-items:center;gap:12px;max-width:1280px;width:100%;margin:0 auto}
+.progress{flex:1;height:3px;background:var(--line);border-radius:3px;overflow:hidden}
+.progress i{display:block;height:100%;background:var(--hl);transition:width .3s}
+.deck-count{font-family:var(--mono);font-size:12px;color:var(--txt3);font-variant-numeric:tabular-nums;min-width:4.5em;text-align:right}
+.hint{font-family:var(--mono);font-size:11px;color:var(--txt3)}
+
+@media (max-width:860px){
+  .hero,.flipside,.lower,.close-card,.paths{grid-template-columns:1fr}
+  .hero{padding-block:36px 28px;gap:28px}
+  .wheel-wrap{max-width:380px}
+  .duo{grid-template-columns:1fr}
+  .house{padding-block:48px}
+  .house-head{grid-template-columns:auto 1fr;gap:16px}
+  .me-btn{grid-column:1 / -1;justify-self:start}
+  .deck-stage{grid-template-columns:1fr;gap:20px;align-content:start}
+  .deck-side{max-width:200px;order:-1}
+  .hint{display:none}
+}
+@media (max-width:480px){
+  .big-glyph{font-size:52px}
+  .hnav .deck-open{display:none}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important;animation:none!important}
+}
+</style>
+</head>
+<body>
+
+<header class="wrap hero">
+  <div>
+    <p class="kicker">A survival guide through all 12 houses · for spiritual entrepreneurs</p>
+    <h1>Confessions of a Libra Rising <span class="g">Living Abroad</span></h1>
+    <p class="tag">So f*cked. Also destined for wealth.</p>
+    <p class="lead">We look like the lucky girl. Charming, polished, things just work out. Underneath, every sign in our chart sits in the house it would least like to be in. Here's the whole map, house by house: what it looks like in real life, and what it means when you run a business.</p>
+    <p class="byline"><b>Amanda Fielding-Smith</b> · Libra rising · 4/6 Projector<br>I help established experts build the room that pays them on repeat: a paid community, amplified by AI-powered systems and paid ads, so they get paid to exist for what they already know.</p>
+    <div class="actions">
+      <a class="btn primary" href="#h1">Start with the 1st house</a>
+      <button class="btn" type="button" data-deck="0">Walkthrough mode <kbd>W</kbd></button>
+    </div>
+    <a class="vidcard" href="https://youtu.be/BkW4RmRELJU" target="_blank" rel="noopener" aria-label="Watch Confessions of a Libra Rising Entrepreneur Abroad on YouTube">
+      <img src="data:image/jpeg;base64,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" alt="" width="320" height="180">
+      <span class="playbtn" aria-hidden="true"></span>
+      <span class="vidtag"><span>Watch the full video on YouTube</span><span>1:32:59</span></span>
+    </a>
+  </div>
+  <div class="wheel-wrap">
+    <svg id="wheel" viewBox="-40 -14 480 428" role="group" aria-label="Libra rising chart wheel. Select a house to jump to it."></svg>
+    <p class="wheel-cap">Tap a house to jump in</p>
+  </div>
+</header>
+
+<div class="wrap"><div class="tally" id="tally" aria-label="My life abroad, by the numbers"></div></div>
+
+<section class="wrap flipside" aria-labelledby="flip-h">
+  <div>
+    <p class="kicker" style="color:var(--mint)">Why our chart runs upside down</p>
+    <h2 id="flip-h">Every sign lands in the house <span class="g">directly across</span> from its home.</h2>
+    <p style="margin-top:16px">Your rising sign decides which sign sits in each of your 12 houses. In the natural zodiac, Aries rules the 1st house, Taurus the 2nd, and so on around the wheel.</p>
+    <p>For Libra rising, the whole wheel turns 180°. Aries, the sign of <em>me</em>, runs our partnerships. Scorpio, the sign of other people's money, runs our own bank account. That's why it looks effortless from the outside and feels wild underneath.</p>
+    <div class="chart-card" aria-label="Amanda's chart">
+      <span class="chip"><b>Libra</b> rising</span>
+      <span class="chip"><b>Taurus</b> sun</span>
+      <span class="chip"><b>Pisces</b> moon</span>
+      <span class="chip"><b>Aquarius</b> north node</span>
+      <span class="chip"><b>4/6 Projector</b></span>
+    </div>
+  </div>
+  <div style="overflow-x:auto">
+    <table class="flip-table" id="flipTable">
+      <thead><tr><th>House</th><th>Natural sign</th><th></th><th>Libra rising</th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+</section>
+
+<nav class="hnav" aria-label="Houses">
+  <div class="wrap">
+    <div class="hnav-scroll" id="hnav"></div>
+    <button class="btn deck-open" type="button" data-deck="current">Walkthrough</button>
+  </div>
+</nav>
+
+<main class="wrap houses" id="houses"></main>
+
+<section class="wrap cheat" aria-labelledby="cheat-h">
+  <p class="kicker" style="color:var(--gold)">Screenshot this</p>
+  <h2 id="cheat-h">The whole survival guide on one page</h2>
+  <p class="sub">Tap “This one's me” on any house above and it gets marked here.</p>
+  <div class="table-scroll">
+    <table>
+      <thead><tr><th>House</th><th>Runs</th><th>Destined for</th><th>Survival rule</th></tr></thead>
+      <tbody id="cheatBody"></tbody>
+    </table>
+  </div>
+</section>
+
+<section class="wrap close">
+  <div class="close-card">
+    <div>
+      <p class="kicker" style="color:var(--mint)">Your chart is a map, not a cage</p>
+      <h2>There's no one right way. <span class="g">There's only your way and consistency.</span></h2>
+      <p>I built my business around this chart instead of fighting it: a home base of recurring revenue, one priority a day, water nearby, and a room full of weird, brilliant people.</p>
+    </div>
+    <div class="fit">
+      <p class="kicker" style="color:var(--gold)">This invitation is for you if</p>
+      <ul>
+        <li>You're an established creator or spiritual entrepreneur with <b>5,000+ followers</b> across your platforms</li>
+        <li>You have <b>real client results</b> you can point to</li>
+        <li>You're already bringing in <b>consistent revenue</b></li>
+        <li>You're ready to build the room that <b>pays you to exist, on repeat</b>, for what you already know, love and do</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="paths">
+    <div class="path deep">
+      <p class="kicker" style="color:var(--mint)">Jump into the deep end</p>
+      <h3>Book a 1:1 Strategy Audit</h3>
+      <p>Sixty minutes on your business, your chart for money, and the community you're meant to build. We map your offer, your pricing and exactly what to build first, and you leave with the plan, not homework to figure out.</p>
+      <div class="path-cta">
+        <a class="btn primary" id="auditLink" href="https://cal.com/amanda-fielding-smith-ljdz7y/strategy-audit-open" target="_blank" rel="noopener">Book my strategy audit</a>
+        <span class="scarcity"><i></i>I take two audits a month</span>
+      </div>
+    </div>
+    <div class="path">
+      <p class="kicker" style="color:var(--lav)">Not there yet? Start here</p>
+      <h3>Try Spiritual Business Skool free</h3>
+      <p>Come hang with the Puffins. Trainings, tools and a community of spiritual entrepreneurs building it their way.</p>
+      <div class="path-cta">
+        <a class="btn" href="https://www.skool.com/amanda/about" target="_blank" rel="noopener">Start for free</a>
+        <small>7-day free trial</small>
+      </div>
+    </div>
+  </div>
+  <p class="fine">Whole-sign houses. Your full chart (planets, aspects, degrees) will shade every section, so read this as the base map. My Taurus sun, Pisces moon, Aquarius north node and Projector design are mine, not every Libra rising's. Astrology is a lens for self-knowledge, not a diagnosis or a prediction.</p>
+</section>
+
+<div class="deck" id="deck" hidden role="dialog" aria-modal="true" aria-label="Walkthrough mode">
+  <div class="deck-top">
+    <p class="kicker">Confessions of a Libra Rising</p>
+    <div class="deck-tools">
+      <button class="btn" type="button" id="deckFull">Full screen</button>
+      <button class="btn" type="button" id="deckClose">Exit <kbd>Esc</kbd></button>
+    </div>
+  </div>
+  <div class="deck-stage">
+    <div class="slide" id="slide" aria-live="polite"></div>
+    <div class="deck-side"><svg id="miniWheel" viewBox="-40 -14 480 428" aria-hidden="true"></svg></div>
+  </div>
+  <div class="deck-bottom">
+    <button class="btn" type="button" id="deckPrev" aria-label="Previous">←</button>
+    <span class="hint">← → to move · F full screen · Esc to exit</span>
+    <div class="progress"><i id="deckBar"></i></div>
+    <span class="deck-count" id="deckCount"></span>
+    <button class="btn" type="button" id="deckNext" aria-label="Next">→</button>
+  </div>
+</div>
+
+<script>
+const VS = '︎';
+const ZODIAC = [
+  ['Aries','♈'],['Taurus','♉'],['Gemini','♊'],['Cancer','♋'],
+  ['Leo','♌'],['Virgo','♍'],['Libra','♎'],['Scorpio','♏'],
+  ['Sagittarius','♐'],['Capricorn','♑'],['Aquarius','♒'],['Pisces','♓']
+];
+const TALLY = [
+  ['4', 'countries', 'US → Croatia → Serbia → Spain'],
+  ['8', 'houses', 'the kind with keys, not the zodiac kind'],
+  ['365', 'days', 'from Croatia to my beach in Alicante'],
+  ['1', 'soulmate', 'met on my Venus line'],
+  ['2', 'dogs', 'across every single border'],
+  ['1', 'mom', 'who said “I’m outta here” first'],
+  ['1', 'US passport', 'and a 90-day Schengen clock']
+];
+const ord = n => n + (n===1?'st':n===2?'nd':n===3?'rd':'th');
+
+const HOUSES = [
+{ n:1, ruler:"Venus", runs:"identity, first impressions, how you walk into a room",
+  title:"The lucky girl effect (and what it’s hiding)",
+  gift:["Charm, diplomacy and magnetism. People like you before you open your mouth.",
+        "A lucky-girl streak. Things have a way of working out for you.",
+        "An eye for beauty that makes everything you touch look expensive."],
+  trap:["Nobody sees what’s going on under the surface, so nobody offers help.",
+        "You’re really nice, and you clocked that their shoes don’t match their outfit in two seconds.",
+        "An ugly space doesn’t just annoy you. It shuts your whole brain down."],
+  irl:["Moved to Alicante, Spain on September 1st.",
+       "The rental was broken, ugly, zero effort from the landlord.",
+       "I was so pissed I couldn’t focus on my business.",
+       "Then: wait. I have Amazon for the first time since leaving the States. And money.",
+       "Redecorated, did energy work on the home. It said, “I love you, I just need some TLC.”"],
+  biz:["I’m my own boss, so my environment is my office, my studio and my mood board.",
+       "Beauty isn’t a vanity line item. It’s equipment."],
+  rule:"Pretty surroundings are a work tool. Buy the lamp.",
+  cues:["Charming, magnetic, the lucky girl","We notice your shoes don’t match in two seconds","Alicante: ugly apartment, couldn’t work","Environment is equipment"] },
+
+{ n:2, ruler:"Pluto", runs:"money, self-worth, what you own",
+  title:"Don’t f*ck with our money",
+  gift:["Serious earning power. Boss energy literally runs through us.",
+        "A deep survival instinct to provide for ourselves, no matter what.",
+        "The ability to make big money fast, in waves."],
+  trap:["Feast or famine: make it fast, spend it faster.",
+        "A family that said money matters but never taught anyone how to save it.",
+        "Tying our self-worth to our bank balance, then needing that balance to feel safe.",
+        "Deeply private about where the money comes from."],
+  irl:["Worked at a strip club for a year in New Orleans.",
+       "Made $13,000 in one night. Had nothing to show for it.",
+       "Once thought a sugar daddy would fix everything.",
+       "Realized my version of hell is relying on a man for anything."],
+  biz:["Every time I posted my revenue like the Stripe-balance coaches, my business constricted.",
+       "Transparency doesn’t mean everyone gets to know where my money comes from.",
+       "Share numbers to prove a mechanism, never to flex."],
+  rule:"Your bank account is a tool, not a mirror.",
+  cues:["Make it fast, spend it faster","$13K night, nothing to show for it","Never relying on a man for money","Why the Stripe-balance flex shrank my business"] },
+
+{ n:3, ruler:"Jupiter", runs:"communication, your local environment, early school years",
+  title:"What’s familiar to us is the unfamiliar",
+  gift:["A wide, worldly view the people around you don’t have.",
+        "Opportunities that pull you out of your hometown early.",
+        "Best friends from all over the world, and spiritual wisdom built from experience."],
+  trap:["You rarely got the “normal house” that stayed put.",
+        "New schools, new houses, new cities, over and over.",
+        "Craving that stable, traditional structure and hating it at the same time."],
+  irl:["Born in Georgia. Parents divorced by five. Moved to North Carolina.",
+       "Two elementary schools, three middle-school switches, four colleges.",
+       "In seventh grade I told my mom I wanted to go to Europe. She said, “Why don’t you chant about it?”",
+       "Raised Buddhist, so I chanted. A spot opened on a student trip: five weeks, four countries, $500.",
+       "Came home devastated I couldn’t see the Alps from my window."],
+  biz:["Your perspective from outside the bubble is the niche.",
+       "Don’t sound like your feed. Say what you see from where you’ve been."],
+  rule:"Your restlessness is research.",
+  cues:["Always the new kid","Chanting my way to Europe in seventh grade","$500, five weeks, four countries","Outsider perspective = your niche"] },
+
+{ n:4, ruler:"Saturn", runs:"home, family, roots, your private inner life",
+  title:"We don’t let people in",
+  gift:["Legacy energy. We’re built for longevity.",
+        "A hard-work ethic that gets things built.",
+        "Fierce loyalty to family and a need for a real home base."],
+  trap:["A household with a right way and a wrong way, and fear of getting it wrong.",
+        "Love that was real but not warm. Crying got you sent to your room.",
+        "Parenting your parents from a very young age.",
+        "Even your closest friends don’t know how much is going on inside."],
+  irl:["The one year my parents lived together, all I remember is them fighting about money.",
+       "After the divorce I became the mediator. I just wanted everyone to get along.",
+       "Straight-A student. Still felt like I was never enough.",
+       "Wanted to live in Europe since I was a kid. Couldn’t until my business could carry me."],
+  biz:["Free community up front, high ticket on the back: one month $20K, the next $200.",
+       "I could not live like that.",
+       "Built a paid community as the home base, with high ticket on top."],
+  rule:"Build the home base before the adventure.",
+  cues:["Parents fighting about money","The kid mediator","$20K month, $200 month","Recurring revenue is the home base"] },
+
+{ n:5, ruler:"Uranus", runs:"creativity, romance, pleasure, self-expression",
+  title:"We don’t want the spotlight. We end up in it anyway.",
+  gift:["When we speak, people listen.",
+        "We don’t follow trends. We set them, and people copy us.",
+        "Creativity and business are the same thing for us."],
+  trap:["Rebellious relationships. We’re drawn to people who break the rules.",
+        "If we really like you, you will not know it. We might just ghost.",
+        "Being seen has to happen outside our comfort zone."],
+  irl:["Dated the wrong kind of person so many times I asked, “Am I the problem?”",
+       "Stopped dating for seven years to become the person I wanted to be with.",
+       "In Croatia my mom begged me to please go outside. I got on Hinge.",
+       "Third or fourth date: a tall Aquarius who didn’t even live in Croatia.",
+       "A stranger took our photo on the Riva and asked if we were in love. We’d met 15 minutes earlier.",
+       "Now he’s in Germany, I’m in Spain, and neither of us wants kids."],
+  biz:["Black-sheep content wins for us.",
+       "Make the weird thing only you would make.",
+       "Getting copied is proof it worked."],
+  rule:"Get seen being weird on purpose.",
+  cues:["We set trends, people copy","Seven years of not dating","The Riva: “Are you in love?”","Black-sheep content wins"] },
+
+{ n:6, ruler:"Neptune", runs:"daily routine, health, work, service",
+  title:"We just want to be paid to exist",
+  gift:["Venus, our chart ruler, is exalted in Pisces. We earn honor through our work.",
+        "Compassionate, intuitive work that actually changes people.",
+        "We can do in three hours what takes other people three weeks."],
+  trap:["Our calendar is more of a suggestion.",
+        "A rigid job would kill us.",
+        "The shadow here is escape. For me it looked like addiction starting in my early teens.",
+        "The wrong people drain us completely."],
+  irl:["My version of hell: a cubicle with fluorescent lights, waiting until 65 to travel.",
+       "Favorite hobby: making to-do lists and then not doing them.",
+       "What works: meditate, walk Jackson, 10K steps, yoga or Pilates three times a week, sun and sea.",
+       "If I’m not near water I don’t feel whole. Alicante is nine minutes from the beach."],
+  biz:["One priority a day, three days a week. The rest is open to interpretation.",
+       "As a Projector, rest is not optional.",
+       "Structure has to exist, but it has to flow."],
+  rule:"One priority. Three days. Near water.",
+  cues:["The calendar is a suggestion","To-do lists I never do","Escape is the shadow","My morning + water rule"] },
+
+{ n:7, ruler:"Mars", runs:"partnerships, clients, contracts, the people across the table",
+  title:"We need someone who’ll just tell us to go",
+  gift:["Direct, decisive partners who cut through our indecision.",
+        "Opportunities, money and people come to us through our warm network.",
+        "Collaborations that do what we couldn’t do alone."],
+  trap:["People-pleasing. We care a lot about how we’re perceived.",
+        "We’re so indecisive we can stall forever without a push.",
+        "Client boundaries don’t come naturally. We have to learn them."],
+  irl:["My best friend Brooke is an Aries: direct, doesn’t care what anyone thinks.",
+       "I was terrified to put my past on the internet.",
+       "She said, “Amanda, you have to share your story.”",
+       "I posted “Why I’m grateful I was a heroin addict.” It went viral.",
+       "It has never once come back to bite me."],
+  biz:["Borrow Aries energy for what you won’t do alone. Brooke now runs visibility audits in my community.",
+       "Say the boundary out loud: “If you don’t get this done, we’re not meeting again.”",
+       "Letting clients go is part of the job."],
+  rule:"Borrow an Aries. Let them push you.",
+  cues:["Brooke: “You have to share your story”","The video that went viral","Never came back to bite me","Boundaries: we’re not meeting again"] },
+
+{ n:8, ruler:"Venus", runs:"intimacy, shared money, trust, death and rebirth",
+  title:"We don’t change until the universe takes the keys",
+  gift:["Loyalty. Once you’re in, you’re in.",
+        "Sensual, grounded luxury and a gift for building wealth with a partner.",
+        "We’re really good in a crisis."],
+  trap:["Stubborn. Transformation feels slow and gets resisted.",
+        "We can stay loyal to the wrong people and the wrong things.",
+        "Break our trust once and it’s over. If I think I need to go through your phone, it’s already done."],
+  irl:["I was the last person to find out I was done using.",
+       "More rehabs than I can count.",
+       "Three arrests in one year. Six months in jail.",
+       "Losing control of when I ate, slept and who I was around finally made me willing to change.",
+       "Getting arrested was the best thing that ever happened to me."],
+  biz:["Notice where you’re loyal to a strategy, mentor or offer that already stopped working.",
+       "Structure creates freedom. Limitations create style."],
+  rule:"Change before the universe forces it.",
+  cues:["Once you’re in, you’re in","The last to know I was done","Three arrests, six months, the turn","Structure creates freedom"] },
+
+{ n:9, ruler:"Mercury", runs:"travel, higher learning, beliefs, big-picture philosophy",
+  title:"A little about a lot, and we still can’t pick a lamp",
+  gift:["Lifelong student with endless curiosity.",
+        "We want to visit everywhere, as long as there’s a home to come back to.",
+        "We see every side of every story."],
+  trap:["A restless mind that never shuts up.",
+        "We never fully commit to one ideology, one method, one answer.",
+        "We’ll argue the other side just to have something to harmonize."],
+  irl:["Four colleges and a master’s in positive coaching psychology.",
+       "Chosen as a student speaker at an international positive psychology conference.",
+       "Four countries in the past 365 days.",
+       "Still spent two to three full days on Amazon and Temu picking decor."],
+  biz:["We only ever do three things in business: attract, convert, deliver.",
+       "There are a million ways to do each one, and we will research all of them.",
+       "No one right way: take the action, then optimize from the data."],
+  rule:"Decide, ship, then read the data.",
+  cues:["Four colleges and a master’s","Days on Amazon picking decor","Attract, convert, deliver","No one right way, only yours"] },
+
+{ n:10, ruler:"the Moon", runs:"career, reputation, your public image",
+  title:"Mama bear with a public reputation",
+  gift:["A caring, intuitive public image. People see us as approachable and smart.",
+        "Natural fit for teaching, counseling, coaching, hospitality.",
+        "Quiet wealth nobody knows about, backed up by Scorpio in the 2nd."],
+  trap:["Burning out from over-caretaking.",
+        "Taking client results personally. One wrong client can throw us back.",
+        "Caring labor gets taken for granted.",
+        "Confusing nice with kind."],
+  irl:["I used to take sales calls anytime, with anyone.",
+       "Took every client’s results personally.",
+       "Learned: being able to give high-ticket value is not the same as someone being ready to receive it.",
+       "Kabbalah: give to someone who isn’t ready and you’re actually taking.",
+       "I’m really caring. I’m not a babysitter."],
+  biz:["Low-ticket recurring entry, high ticket on top, because not everyone is ready.",
+       "Tell people what they need to hear, not what they want to hear.",
+       "Feeling bitter? Notice it. Bitter is your portal to wealth."],
+  rule:"Nice isn’t kind. Tell the truth, then let them choose.",
+  cues:["Nice vs. kind","Giving to someone not ready = taking","Low ticket entry, high ticket on top","Bitter is your portal to wealth"] },
+
+{ n:11, ruler:"the Sun", runs:"friends, community, networks, hopes and dreams",
+  title:"Queen of our own band of misfits",
+  gift:["Social royalty. We’re built to lead a community.",
+        "We find real pleasure with our people.",
+        "A network that pulls us toward opportunity."],
+  trap:["We feel alienated on the regular. No one fully gets us.",
+        "The things we enjoy look like rebellion to everyone else.",
+        "People assume we’re all fun. That’s not the full story."],
+  irl:["Weird person who likes weird things.",
+       "Best friends from Brazil, Sri Lanka, everywhere.",
+       "Raised Buddhist, I could never take on one group’s label as my whole identity, not even in recovery.",
+       "So I built my own room. That’s literally my business."],
+  biz:["Stop auditioning for rooms that make you shrink.",
+       "Build the community you wanted to find.",
+       "A paid community is Leo in the 11th turned into a business model."],
+  rule:"Stop auditioning. Build the room.",
+  cues:["Weird people who like weird things","We feel alienated on the regular","Never taking on one group’s label","Build the room"] },
+
+{ n:12, ruler:"Mercury", runs:"the subconscious, hidden patterns, what happens in private",
+  title:"The loudest critic lives in a private subfolder",
+  gift:["Lightning-fast subconscious data processing. We read the room before anyone speaks.",
+        "Deep analytical intuition. We notice tiny shifts in people and spaces.",
+        "The helper energy that makes our work genuinely good."],
+  trap:["Venus, our chart ruler, is in her fall in Virgo. We’re insecure about what “good work” even looks like.",
+        "Impossibly high standards and a really loud inner critic.",
+        "Replaying conversations for flaws long after they end.",
+        "Smooth outside, running on a continuous loop inside."],
+  irl:["So much shame about my past I believed people would think I was a fake.",
+       "Thought no one would trust me or want to work with me.",
+       "The critic said wait until it’s perfect.",
+       "What actually happened: my story became my superpower."],
+  biz:["No project is 100% of the way there in the beginning.",
+       "Cowboy test it: ship v3, read what comes back, fix it live.",
+       "Polishing carries zero rejection risk. That’s exactly why the critic loves it."],
+  rule:"Ship it before it’s perfect. The critic doesn’t get a vote.",
+  cues:["Venus in her fall","The critic in the subfolder","Shame about my past → superpower","Cowboy test it, ship at v3"] }
+];
+HOUSES.forEach(h => {
+  const z = ZODIAC[(h.n + 5) % 12];
+  h.sign = z[0]; h.glyph = z[1] + VS;
+  const nat = ZODIAC[h.n - 1];
+  h.natSign = nat[0]; h.natGlyph = nat[1] + VS;
+  h.home = ((h.n + 5) % 12) + 1;
+});
+
+/* ---- per-viewer "this one's me" ---- */
+let mine = new Set();
+try { mine = new Set(JSON.parse(localStorage.getItem('libra-me') || '[]')); } catch(e) {}
+const saveMine = () => { try { localStorage.setItem('libra-me', JSON.stringify([...mine])); } catch(e) {} };
+
+/* ---- wheel ---- */
+const NS = 'http://www.w3.org/2000/svg';
+function el(tag, attrs, text){ const e = document.createElementNS(NS, tag); for (const k in attrs) e.setAttribute(k, attrs[k]); if (text != null) e.textContent = text; return e; }
+function pt(r, deg){ const a = deg * Math.PI / 180; return [200 + r * Math.cos(a), 200 - r * Math.sin(a)]; }
+function buildWheel(svg, interactive){
+  const R = 190, r = 74;
+  HOUSES.forEach((h, i) => {
+    const a0 = 180 + 30 * i, a1 = a0 + 30, mid = a0 + 15;
+    const [ox0, oy0] = pt(R, a0), [ox1, oy1] = pt(R, a1), [ix1, iy1] = pt(r, a1), [ix0, iy0] = pt(r, a0);
+    const d = `M${ox0} ${oy0} A${R} ${R} 0 0 0 ${ox1} ${oy1} L${ix1} ${iy1} A${r} ${r} 0 0 1 ${ix0} ${iy0} Z`;
+    const seg = el('path', { d, class: 'seg' + (i % 2 ? ' alt' : ''), 'data-n': h.n });
+    if (interactive){
+      seg.setAttribute('tabindex', '0'); seg.setAttribute('role', 'button');
+      seg.setAttribute('aria-label', `${ord(h.n)} house, ${h.sign}`);
+      const go = () => document.getElementById('h' + h.n).scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+      seg.addEventListener('click', go);
+      seg.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); go(); } });
+    }
+    svg.appendChild(seg);
+    const [gx, gy] = pt(152, mid), [nx, ny] = pt(106, mid);
+    svg.appendChild(el('text', { x: gx, y: gy, class: 'w-glyph', 'text-anchor': 'middle', 'dominant-baseline': 'central' }, h.glyph));
+    svg.appendChild(el('text', { x: nx, y: ny, class: 'w-num', 'text-anchor': 'middle', 'dominant-baseline': 'central' }, h.n));
+  });
+  svg.appendChild(el('line', { x1: -6, y1: 200, x2: 406, y2: 200, class: 'w-axis' }));
+  svg.appendChild(el('text', { x: -8, y: 190, class: 'w-axis-lbl', 'text-anchor': 'start' }, 'ASC'));
+  svg.appendChild(el('text', { x: 408, y: 190, class: 'w-axis-lbl', 'text-anchor': 'end' }, 'DSC'));
+  svg.appendChild(el('text', { x: 200, y: 196, class: 'w-center-a', 'text-anchor': 'middle' }, 'Libra'));
+  svg.appendChild(el('text', { x: 200, y: 216, class: 'w-center-b', 'text-anchor': 'middle' }, 'RISING'));
+}
+const wheel = document.getElementById('wheel'), mini = document.getElementById('miniWheel');
+buildWheel(wheel, true); buildWheel(mini, false);
+
+/* ---- by the numbers ---- */
+document.getElementById('tally').innerHTML = TALLY.map(([n, l, s]) => `<div><b>${n}</b><span>${l}</span><small>${s}</small></div>`).join('');
+
+/* ---- flip table ---- */
+document.querySelector('#flipTable tbody').innerHTML = HOUSES.map(h =>
+  `<tr><td>${ord(h.n)}</td><td><span class="glyph">${h.natGlyph}</span>${h.natSign}</td><td class="arrow">→</td><td><span class="glyph">${h.glyph}</span>${h.sign}</td></tr>`).join('');
+
+/* ---- nav ---- */
+const hnav = document.getElementById('hnav');
+hnav.innerHTML = HOUSES.map(h => `<a href="#h${h.n}" data-n="${h.n}"><span class="glyph">${h.glyph}</span>${ord(h.n)}</a>`).join('');
+
+/* ---- houses ---- */
+const li = arr => arr.map(x => `<li>${x}</li>`).join('');
+document.getElementById('houses').innerHTML = HOUSES.map(h => `
+<section class="house" id="h${h.n}" aria-labelledby="h${h.n}-t">
+  <div class="house-head">
+    <div><div class="big-glyph" aria-hidden="true">${h.glyph}</div><span class="house-num">HOUSE ${String(h.n).padStart(2,'0')}</span></div>
+    <div>
+      <p class="kicker">${ord(h.n)} house · ${h.sign} · ruled by ${h.ruler}</p>
+      <h2 id="h${h.n}-t">${h.title}</h2>
+      <p class="runs"><span>Runs</span>${h.runs}</p>
+      <p class="flipnote"><span>Flipped</span>${h.sign}'s natural home is the ${ord(h.home)} house. Here it's running your ${ord(h.n)}.</p>
+    </div>
+    <button class="me-btn" type="button" id="me-${h.n}" data-n="${h.n}" aria-pressed="false">This one's me</button>
+  </div>
+  <div class="duo">
+    <div class="side gift"><h3>Destined for</h3><ul>${li(h.gift)}</ul></div>
+    <div class="side trap"><h3>Also f*cked because</h3><ul>${li(h.trap)}</ul></div>
+  </div>
+  <div class="lower">
+    <div class="irl"><h3>In real life</h3><ul>${li(h.irl)}</ul></div>
+    <div class="biz"><h3>As a six-figure business owner</h3><ul>${li(h.biz)}</ul><p class="rule"><span>Survival rule</span>${h.rule}</p></div>
+  </div>
+</section>`).join('');
+
+/* ---- cheat sheet ---- */
+const cheatBody = document.getElementById('cheatBody');
+function renderCheat(){
+  cheatBody.innerHTML = HOUSES.map(h => `<tr class="${mine.has(h.n) ? 'me' : ''}"><td><span class="glyph">${h.glyph}</span>${ord(h.n)} · ${h.sign}</td><td>${h.runs}</td><td>${h.gift[0]}</td><td>${h.rule}</td></tr>`).join('');
+}
+function syncMine(){
+  HOUSES.forEach(h => {
+    const on = mine.has(h.n);
+    document.getElementById('me-' + h.n).setAttribute('aria-pressed', on);
+    hnav.querySelector(`[data-n="${h.n}"]`).classList.toggle('me', on);
+    wheel.querySelector(`.seg[data-n="${h.n}"]`).classList.toggle('me', on);
+  });
+  renderCheat();
+}
+document.getElementById('houses').addEventListener('click', e => {
+  const b = e.target.closest('.me-btn'); if (!b) return;
+  const n = +b.dataset.n; mine.has(n) ? mine.delete(n) : mine.add(n);
+  saveMine(); syncMine();
+});
+syncMine();
+
+/* ---- current house tracking ---- */
+let current = 1;
+const io = new IntersectionObserver(entries => {
+  entries.forEach(en => {
+    if (!en.isIntersecting) return;
+    current = +en.target.id.slice(1);
+    hnav.querySelectorAll('a').forEach(a => a.classList.toggle('cur', +a.dataset.n === current));
+    const cur = hnav.querySelector('a.cur');
+    if (cur) hnav.scrollTo({ left: cur.offsetLeft - hnav.clientWidth / 2 + cur.clientWidth / 2, behavior: 'smooth' });
+  });
+}, { rootMargin: '-40% 0px -55% 0px' });
+document.querySelectorAll('.house').forEach(s => io.observe(s));
+
+/* ---- walkthrough deck ---- */
+const deck = document.getElementById('deck'), slide = document.getElementById('slide');
+const TOTAL = HOUSES.length + 2;
+let idx = 0, lastFocus = null;
+function renderSlide(){
+  let html;
+  if (idx === 0){
+    html = `<p class="kicker">Amanda Fielding-Smith · Spiritual Business Guide</p>
+      <h2>Confessions of a Libra Rising <span class="g">Living Abroad</span></h2>
+      <p class="deck-lead">So f*cked. Also destined for wealth. A survival guide through all 12 houses, in real life and in business.</p>
+      <div class="deck-tally">${TALLY.map(([n, l]) => `<div><b>${n}</b><span>${l}</span></div>`).join('')}</div>`;
+  } else if (idx === TOTAL - 1){
+    html = `<p class="kicker">Your chart is a map, not a cage</p>
+      <h2>There's no one right way. <span class="g">Only your way and consistency.</span></h2>
+      <p class="deck-lead">The full guide is linked below. Established creator ready to build the room that pays you to exist? Book a 1:1 strategy audit. I take two a month.</p>`;
+  } else {
+    const h = HOUSES[idx - 1];
+    html = `<div class="deck-glyph" aria-hidden="true">${h.glyph}</div>
+      <p class="kicker" style="margin-top:16px">${ord(h.n)} house · ${h.sign} · ${h.runs}</p>
+      <h2>${h.title}</h2>
+      <ul>
+        <li>${h.cues[0]}</li>
+        <li class="t">${h.cues[1]}</li>
+        <li class="r">${h.cues[2]}</li>
+        <li>${h.cues[3]}</li>
+      </ul>
+      <p class="deck-rule">${h.rule}</p>`;
+  }
+  slide.innerHTML = html;
+  mini.querySelectorAll('.seg').forEach(s => s.classList.toggle('active', +s.dataset.n === idx));
+  document.getElementById('deckBar').style.width = ((idx + 1) / TOTAL * 100) + '%';
+  document.getElementById('deckCount').textContent = `${idx + 1} / ${TOTAL}`;
+  try { localStorage.setItem('libra-slide', idx); } catch(e) {}
+}
+function openDeck(start){
+  lastFocus = document.activeElement;
+  idx = Math.max(0, Math.min(TOTAL - 1, start));
+  deck.hidden = false; document.body.style.overflow = 'hidden';
+  renderSlide(); document.getElementById('deckNext').focus();
+}
+function closeDeck(){
+  deck.hidden = true; document.body.style.overflow = '';
+  if (document.fullscreenElement) document.exitFullscreen().catch(() => {});
+  if (idx >= 1 && idx <= HOUSES.length) document.getElementById('h' + idx).scrollIntoView();
+  if (lastFocus) lastFocus.focus();
+}
+const step = d => { idx = Math.max(0, Math.min(TOTAL - 1, idx + d)); renderSlide(); };
+const toggleFull = () => {
+  if (document.fullscreenElement) document.exitFullscreen().catch(() => {});
+  else if (deck.requestFullscreen) deck.requestFullscreen().catch(() => {});
+};
+document.querySelectorAll('[data-deck]').forEach(b => b.addEventListener('click', () => {
+  openDeck(b.dataset.deck === 'current' ? current : +b.dataset.deck);
+}));
+document.getElementById('deckPrev').addEventListener('click', () => step(-1));
+document.getElementById('deckNext').addEventListener('click', () => step(1));
+document.getElementById('deckClose').addEventListener('click', closeDeck);
+document.getElementById('deckFull').addEventListener('click', toggleFull);
+document.addEventListener('keydown', e => {
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  if (deck.hidden){
+    if ((e.key === 'w' || e.key === 'W') && !/INPUT|TEXTAREA/.test(document.activeElement.tagName)) openDeck(0);
+    return;
+  }
+  if (['ArrowRight','PageDown',' '].includes(e.key)){ e.preventDefault(); step(1); }
+  else if (['ArrowLeft','PageUp'].includes(e.key)){ e.preventDefault(); step(-1); }
+  else if (e.key === 'Home'){ idx = 0; renderSlide(); }
+  else if (e.key === 'End'){ idx = TOTAL - 1; renderSlide(); }
+  else if (e.key === 'f' || e.key === 'F'){ toggleFull(); }
+  else if (e.key === 'Escape' && !document.fullscreenElement){ closeDeck(); }
+});
+</script>
+
+</body>
+</html>
